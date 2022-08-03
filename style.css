@@ -1,0 +1,417 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.navbar-toggler{
+    height: 60px;
+    width: 60px;
+}
+.navbar-toggler-icon{
+    height: 40px;
+    width: 40px;
+}
+.nav-link{
+    font-size: 18px;
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/cocinamoderna.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;    
+}
+.titulo-menuprincipal{
+    font-size: 80px;
+    text-align: center;
+    color:rgb(240, 240, 240);
+}
+.menu-secundario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 450px;
+    background-color: rgb(215, 215, 215);
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+}
+.imagenproyecto {
+    height: 300px;
+    width: 500px;
+    border: solid 3px rgb(200, 200, 215);
+}
+.info_secundaria h2 {
+    color: black;
+    font-weight:bold;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.info_secundaria p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Edu SA Beginner', cursive;
+}
+.info_secundaria{
+    width: 30%;
+    text-align: center;
+}
+
+/*Footer*/
+.footer{
+    height: 250px;
+    background-color:rgb(26, 26, 26);
+}
+.bi{
+    font-size: 20px;
+    color:rgb(149, 43, 43);
+}
+.footer--redes{
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-link{
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: gray;
+}
+.footer-link:hover{
+    color: rgb(159, 58, 58);
+}
+
+.footer--informacion{
+    font-size: 17px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer--datos{
+    height: 50px;
+    background-color:rgb(149, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer--datos p{
+    font-size: 20px;
+    color: black;
+}
+/*Formulario*/
+.menuformulario {
+    height: 800px;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/foto-formulario.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.formulario {
+    height: 500px;
+    width: 400px;
+    background-color: rgba(0,0,0,0.6);
+}
+.formulario h1 {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.formulario h1:hover{
+    transform: scale(1.2,1.2);
+}
+.form-label  {
+    font-weight: normal;
+    font-size: 18px;
+    font-family: sans-serif;
+    display:block;
+    color: rgb(175, 26, 26);
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+.form-input {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: sans-serif;
+    display:block;
+    color: rgb(138, 136, 136);
+    background: rgba(0,0,0,0.7);
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+}
+input:focus{
+    background-color: rgb(169, 54, 54);
+    color: black;
+}
+.text-area {
+    font-weight: normal;
+    font-size: 12px;
+    font-family: sans-serif;
+    display:block;
+    color: rgb(138, 136, 136);
+    background: rgba(0,0,0,0.7);
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+}
+.text-area {
+    background: rgba(0,0,0,0.7);
+    border: none;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.boton-enviar{
+    width: 100%;
+    color: rgb(175, 26, 26);
+    background:rgb(138, 136, 136);
+    border: none;
+    height: 40px;
+}
+.boton-enviar:hover{
+    transform: scale(1.2,1.2);
+}
+/*productos*/
+.grilladefotos{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows:600px ;
+    grid-template-areas:"areaa areab areac aread";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: gray;                  
+}
+.galeriauno{
+    grid-area: areaa;
+    
+}
+.galeriados{
+    grid-area: areab;
+}
+.galeriatres{
+    grid-area: areac;
+}
+.galeriacuatro{
+    grid-area: aread;
+}
+.unococina{
+    height: 300px;
+    width: 300px;
+}
+.unococina:hover{
+    transform: scale(1.2 , 1.2);
+}
+/*comercial*/
+.main--comercial{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+ height: 80%;
+}
+.card-img-top{
+    height: 70%;
+}
+/*quienessomos*/
+
+.row{
+    background-color:  rgb(239, 239, 243);
+    
+}
+.col{
+    background-color: rgb(119, 117, 117);
+}
+
+#row-h1{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 239, 243);
+    text-align: center;
+}
+.row-p{
+    font-size: 40px;
+    color: rgb(80, 78, 78);
+}
+#row-dos{
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 78, 78);
+    text-align: center;
+}
+.row-pdos{
+    font-size: 20px;
+    color:rgb(239, 239, 243);
+}
+.imagenuno{
+    width: 700px;
+   
+}
+#row-quienes{
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+#coluno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    
+}
+#coldos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+#coltres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+@media only screen and (max-width:600px) {
+    /*index*/
+    .container-fluir{
+        justify-content: space-around;
+    }
+   .menu-principal{
+        height: 400px;
+    }
+    .titulo-menuprincipal{
+        font-size: 40px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+   .imagenproyecto{
+        height:200px;
+        width: 80%;
+    }
+    .info_secundaria p{
+        font-size:15px ;
+    }
+    .info_secundaria h2{
+        font-size: 18px;
+    }
+    .menu-secundario{
+        justify-content: center;
+        gap:10px;
+    }
+    .info_secundaria{
+        width: 80%;
+    }
+    .boton{
+        font-size: 15px;
+    }
+    /*footer*/
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        grid-area: piedepagina;
+        height: 170px;
+
+    }
+    .footer p{
+        font-size: 13px;
+    }
+    .footer--informacion{
+        font-size: 12px;
+    }
+    
+    .footer--datos{
+        height: 30px;
+    }
+    .footer--datos p{
+        font-size: 12px;
+    }
+    /*formulario*/
+    .menuformulario {
+        height: 700px;
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/mini-fotoformulario.jpg);
+
+    }
+    .formulario {
+        height: 450px;
+        width: 80%;
+    }
+    
+  /*productos*/
+   .grilladefotos{
+        grid-template-columns: 45% 45% ;
+        grid-template-rows: 250px 250px ;
+        grid-template-areas:"areaa areab"
+                            "areac aread";
+        justify-content: center;
+        align-content: center;                    
+    }
+    .unococina{
+        height:180px;
+        width: 160px;
+    }
+    /*comecial*/
+    .main--comercial{
+        flex-direction: column;
+        height: 1800px;
+    }
+    .col{
+        flex-direction: column;
+        height: 600px;
+    }
+    /*quienesomos*/
+    
+    .row-p{
+        font-size: 30px;
+    }
+    .row-pdos{
+        font-size: 15px;
+    }
+    .imagenuno{
+        height: 200px;
+        width: 200px;
+    }
+    #row-quienes{
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+   
+}
+   
