@@ -16,10 +16,6 @@
     height: 40px;
     width: 40px;
 }
-.nav-link{
-    font-size: 18px;
-}
-
 .menu-principal{
     display: flex;
     justify-content: center;
@@ -27,10 +23,9 @@
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/cocinamoderna.jpg);
     background-size: cover;
     background-position: center;
-    height: 600px;    
+       
 }
 .titulo-menuprincipal{
-    font-size: 80px;
     text-align: center;
     color:rgb(240, 240, 240);
 }
@@ -38,43 +33,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    height: 450px;
     background-color: rgb(215, 215, 215);
     padding: 0 20px 0 20px;
     flex-wrap: wrap;
 }
 .imagenproyecto {
-    height: 300px;
-    width: 500px;
     border: solid 3px rgb(200, 200, 215);
 }
 .info_secundaria h2 {
     color: black;
     font-weight:bold;
-    font-size: 25px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 0 0 20px 0;
 }
-
 .info_secundaria p{
     text-align: center;
-    font-size: 20px;
     font-family: 'Edu SA Beginner', cursive;
 }
 .info_secundaria{
-    width: 30%;
     text-align: center;
 }
-
 /*Footer*/
 .footer{
-    height: 250px;
     background-color:rgb(26, 26, 26);
 }
 .bi{
-    font-size: 20px;
     color:rgb(149, 43, 43);
 }
 .footer--redes{
@@ -92,9 +76,7 @@
 .footer-link:hover{
     color: rgb(159, 58, 58);
 }
-
 .footer--informacion{
-    font-size: 17px;
     color: gray;
     display: flex;
     justify-content: center;
@@ -102,20 +84,17 @@
     gap: 20px;
 }
 .footer--datos{
-    height: 50px;
-    background-color:rgb(149, 43, 43);
+   background-color:rgb(149, 43, 43);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 .footer--datos p{
-    font-size: 20px;
     color: black;
 }
 /*Formulario*/
 .menuformulario {
-    height: 800px;
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/foto-formulario.webp);
     background-size: cover;
     display: flex;
@@ -128,8 +107,6 @@
 
 }
 .formulario {
-    height: 500px;
-    width: 400px;
     background-color: rgba(0,0,0,0.6);
 }
 .formulario h1 {
@@ -164,8 +141,8 @@
     border: none;
 }
 input:focus{
-    background-color: rgb(169, 54, 54);
-    color: black;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
 }
 .text-area {
     font-weight: normal;
@@ -198,9 +175,6 @@ input:focus{
 /*productos*/
 .grilladefotos{
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows:600px ;
-    grid-template-areas:"areaa areab areac aread";
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -209,7 +183,6 @@ input:focus{
 }
 .galeriauno{
     grid-area: areaa;
-    
 }
 .galeriados{
     grid-area: areab;
@@ -220,91 +193,86 @@ input:focus{
 .galeriacuatro{
     grid-area: aread;
 }
-.unococina{
-    height: 300px;
-    width: 300px;
-}
 .unococina:hover{
     transform: scale(1.2 , 1.2);
 }
-/*comercial*/
-.main--comercial{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-}
-.col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card{
- height: 80%;
-}
-.card-img-top{
-    height: 70%;
-}
 /*quienessomos*/
-
-.row{
-    background-color:  rgb(239, 239, 243);
+.menu-quienes-somos{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(43, 42, 42),rgb(141, 138, 138));
+}
+.fotoquienesomos{
+    grid-area:a1;
+    border-radius: 50%;     
+}
+.lodesantana{
+    grid-area:a2;
+    color: rgb(29, 28, 28);
     
 }
-.col{
-    background-color: rgb(119, 117, 117);
+span{
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
 }
-
-#row-h1{
-    height: 200px;
+.elementos{
+    grid-area:a3;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    height: 140px;
+}
+.uno {
+    background-color: rgb(191, 93, 93);
+    border-radius: 50%; 
+    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(239, 239, 243);
-    text-align: center;
+    align-items: center;       
 }
-.row-p{
-    font-size: 40px;
-    color: rgb(80, 78, 78);
-}
-#row-dos{
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(80, 78, 78);
-    text-align: center;
-}
-.row-pdos{
+.ideas{
     font-size: 20px;
-    color:rgb(239, 239, 243);
+    font-family: 'Work Sans', sans-serif;
 }
-.imagenuno{
-    width: 700px;
-   
+.info-quienessomos{
+    grid-area:a4;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
 }
-#row-quienes{
+.dos {
+    background-color: rgb(156, 156, 163);
+    border-radius: 50%; 
+    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 700px;
+    align-items: center;       
 }
-#coluno{
+.tres {
+   background-color: rgba(92, 43, 43, 0.934);
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+}
+/*comercial*/
+.maincomercial{
+    background-color:black;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    
 }
-#coldos{
+.articulo{
+    background-color: rgb(157, 151, 151);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gray;
 }
-#coltres{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
+.articulo p {
+    background-color: rgb(187, 117, 108);
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
 }
 
 @media only screen and (max-width:600px) {
@@ -332,8 +300,8 @@ input:focus{
         font-size: 18px;
     }
     .menu-secundario{
-        justify-content: center;
         gap:10px;
+        height: 450px;
     }
     .info_secundaria{
         width: 80%;
@@ -343,11 +311,10 @@ input:focus{
     }
     /*footer*/
     .footer{
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        grid-area: piedepagina;
         height: 170px;
-
     }
     .footer p{
         font-size: 13px;
@@ -355,7 +322,6 @@ input:focus{
     .footer--informacion{
         font-size: 12px;
     }
-    
     .footer--datos{
         height: 30px;
     }
@@ -366,13 +332,23 @@ input:focus{
     .menuformulario {
         height: 700px;
         background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/mini-fotoformulario.jpg);
-
     }
     .formulario {
         height: 450px;
         width: 80%;
     }
-    
+    .uno{
+        width: 130px;
+        height: 130px;
+    }
+    .dos{
+        width: 130px;
+        height: 130px;
+    }
+    .tres{
+        width: 130px;
+        height: 130px;
+    }
   /*productos*/
    .grilladefotos{
         grid-template-columns: 45% 45% ;
@@ -386,32 +362,202 @@ input:focus{
         height:180px;
         width: 160px;
     }
-    /*comecial*/
-    .main--comercial{
-        flex-direction: column;
-        height: 1800px;
-    }
-    .col{
-        flex-direction: column;
-        height: 600px;
-    }
-    /*quienesomos*/
     
-    .row-p{
-        font-size: 30px;
+    /*quienesomos*/
+    .menu-quienes-somos{
+        grid-template-columns:100%;
+        grid-template-rows:300px 250px 200px 300px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
     }
-    .row-pdos{
+   .fotoquienesomos{
+        height: 90%;
+        width: 80%;
+    }
+    span{
+        font-size: 60px;
+    }
+    .info-quienessomos{
+        font-size: 18px;
+    }
+    /*comercial*/ 
+    .maincomercial{
+        height: 1400px;
+        flex-direction: column;
+    }
+    .articulo{
+        height: 400px;
+        width: 100%;
+    }
+    .local{
+        height: 200px;
+        width: 210px;
+    }
+    .articulo p{
+        margin-top: 30px;
+        width: 230px;
         font-size: 15px;
     }
-    .imagenuno{
-        height: 200px;
-        width: 200px;
+    
+}
+@media only screen and (min-width:600px){
+    /*index*/
+    .menu-principal{
+        height: 500px; 
     }
-    #row-quienes{
-        justify-content: center;
-        align-items: center;
+    .titulo-menuprincipal{
+        font-size: 70px;
+    }
+    .menu-secundario{
+        gap: 80px;
         height: 600px;
+        flex-direction: column;    
     }
-   
+    .imagenproyecto{
+        height: 300px;
+        width: 500px;
+    }
+    /*footer*/
+    .footer{
+        height: 250px;
+    }
+    .bi{
+        font-size: 20px;
+    }
+    .footer--informacion{
+        font-size: 17px;
+    }
+    .footer--datos{
+        height: 50px;
+    }
+    .footer--datos p{
+        font-size: 20px;
+    }
+    /*Formulario*/
+    .menuformulario{
+        height: 800px;
+    }
+    .formulario{
+        height: 500px;
+        width: 400px;
+    }
+    /*quienessomos*/
+    .menu-quienes-somos{
+        grid-template-columns:100%;
+        grid-template-rows:600px 250px 300px 250px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+    }
+    .lodesantana{
+        font-size: 60px;
+    }
+    span{
+        font-size: 80px;
+    }
+    .uno{
+        width: 150px;
+        height: 150px;
+    }
+    .dos{
+        width: 150px;
+        height: 150px;
+    }
+    .tres{
+        width: 150px;
+        height: 150px;
+    }
+    .info-quienessomos{
+        font-size: 30px;
+    }
+    
+    .info-quienessomos{
+        font-size: 22px;
+    }
+    /*comercial*/
+    .maincomercial{
+        height: 800px;
+    }
+    .articulo{
+        height: 500px;
+        width: 40%;
+    }
+    .local{
+        height: 180px;
+        width: 80%;
+    }
+    .articulo p {
+        margin-top: 30px;
+        width: 60%;
+        font-size: 15px;
+    }
+    .grilladefotos{
+        grid-template-areas:"areaa areab"
+                            "areac aread";
+    }
+    .unococina{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media only screen and (min-width:992px){
+    /*index*/
+    .nav-link{
+        font-size: 18px;
+    }
+    .menu-principal{
+        height: 600px; 
+        flex-direction: row; 
+    }
+    .titulo-menuprincipal{
+        font-size: 80px;
+    }
+    .menu-secundario{
+        height: 450px;
+    }
+    .info_secundaria h2{
+        font-size: 25px;
+    }
+    .info_secundaria p{
+        font-size:20px ;
+    }
+    .info_secundaria{
+        width: 30%;
+    }
+    /*productos*/
+    .grilladefotos{
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows:400px ;
+        grid-template-areas:"areaa areab areac aread";
+    }
+    /*quienesomos*/
+    .menu-quienes-somos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 200px;
+        grid-template-areas:"a1 a2"
+                            "a1 a3"
+                            "a1 a4";
+    }
+    /*comercial*/
+    .maincomercial{
+        height: 1000px;
+    }
+    .articulo{
+        height: 800px;
+        width: 800px;
+    } 
+    .local{
+        height: 300px;
+        width: 320px;
+    }
+    .articulo p {
+        margin-top: 40px;
+        width: 330px;
+        font-size: 18px;
+    }
+    
 }
    
