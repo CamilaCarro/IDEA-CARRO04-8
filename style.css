@@ -8,6 +8,11 @@
     height: 100%;
     width: 100%;
 }
+.nav-link:hover {
+    color: brown;
+    transform: scale(1.2,1.2);
+
+}
 .navbar-toggler{
     height: 60px;
     width: 60px;
@@ -84,7 +89,6 @@
     gap: 20px;
 }
 .footer--datos{
-   background-color:rgb(149, 43, 43);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,6 +481,10 @@ span{
     .info-quienessomos{
         font-size: 22px;
     }
+    .fotoquienesomos{
+        height: 400px;
+        width: 80%;
+    }
     /*comercial*/
     .maincomercial{
         height: 800px;
@@ -535,7 +543,7 @@ span{
     }
     /*quienesomos*/
     .menu-quienes-somos{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 250px 250px 200px;
         grid-template-areas:"a1 a2"
                             "a1 a3"
